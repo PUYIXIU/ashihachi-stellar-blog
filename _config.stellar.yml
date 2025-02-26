@@ -1,0 +1,144 @@
+
+# https://xaoxuu.com/wiki/stellar/pages/
+
+# 是否生成open graph
+open_graph:
+  enable: false
+  twitter_id: # for open_graph meta
+
+# 文章相关配置
+article:
+  # 文章类型-布局风格
+  type: tech # tech | story
+  # 文章封面-是否根据tags关键字在线搜索封面
+  auto_cover: false # true | false
+  # 自动生成摘要
+  auto_excerpt: 200
+
+  # 相关文章推荐
+  # npm i hexo-related-popular-posts
+  related_posts:
+      enable: true
+      title: 相关内容
+
+  # 许可协议
+  license: '本文产自🐙足八桑🐙肚子里了剩无几的墨水，转载请注明出处'
+
+  # 分享链接
+  share: [wechat, weibo, email, link]
+
+# logo、标题配置
+logo:
+  # 主标题
+  title: Ashikachi
+  # 头像
+  avatar: /images/base/avatar.png
+  # 切换副标题 '副标题1 | 副标题2'
+  subtitle: '🐙足八桑🐙 | 八条腿各有想法'
+
+# 样式配置
+#style:
+  # 左侧栏
+#  leftbar:
+#    # 背景颜色：纯色/渐变色/图片
+#    background-image: # url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+#    # 模糊半径
+#    blur-px:  # 100px
+#    # 模糊颜色
+#    blur-bg:  # var(--alpha60)
+
+# 侧壁那栏这功能导航菜单
+menubar:
+  # 一行多少个
+  columns: 4
+  # 具体菜单内容
+  items:
+    - id: post # 页面中高亮的 menu_id
+      theme: '#1BCDFC' # 高亮时的颜色
+      icon: solar:documents-bold-duotone # 图标，可以在_data/icons.yml中配置，也可以使用图片
+      title: 文章 # 标题
+      url: / # 跳转链接，支持相对路径和绝对路径
+    - id: wiki
+      theme: '#3DC550'
+      icon: solar:notebook-bookmark-bold-duotone
+      title: 文档
+      url: /wiki/
+    - id: explore
+      theme: '#FA6400'
+      icon: solar:planet-bold-duotone
+      title: 探索
+      url: /explore/
+    - id: social
+      theme: '#F44336'
+      icon: solar:chat-square-like-bold-duotone
+      title: 社交
+      url: /friends/
+
+# 搜索功能
+# 可以在wiki或笔记的配置中，定制化搜索范围
+# 详细请看： https://xaoxuu.com/wiki/stellar/sidebar/
+
+search:
+  # 搜索服务：local_search | algolia_search | other
+  service: local_search
+  # 本地搜索配置
+  local_search: # 在front-matter中设置indexing:false避免被索引搜索
+    field: all  # post | page |all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块，在content开启时有效
+
+# 页脚
+footer:
+  # 社交媒体相关设置
+  social:
+    github:
+      icon: github:logo
+      url: https://github.com/puyixiu
+    gitee:
+      icon: gitee:logo
+      url: https://gitee.com/ElectricDuck
+    bilibili:
+      icon: bilibili:logo
+      url: https://space.bilibili.com/12317404?spm_id_from=333.1007.0.
+    juejin:
+      icon: juejin:logo
+      url: https://juejin.cn/user/587554333405684/posts
+    codepen:
+      icon: codepen:logo
+      url: https://codepen.io/jnkzhatk-the-builder
+
+# 标签组件配置
+tag_plugins:
+  # emoji资源配置
+  emoji:
+    default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
+    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
+    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/{name}.png
+  # icon配置
+  icon:
+    # 默认颜色
+    # theme, accent, red, orange, yellow, green, cyan, blue, purple
+    default_color: accent
+  # 图片配置
+  image:
+    # 全站开启大图展示模式
+    fancybox: false
+  # 引用配置
+  quot:
+    #default: # 自定义配置方案
+    #  prefix:
+    #  suffix:
+    coffee:
+      prefix: /images/icons/CoffeeToGo.svg
+    talk:
+      prefix: quot-front:48
+      suffix: quot-back:48
+
+# services 网站服务
+services:
+  siteinfo:
+    # 设置自定义的抓取link网站信息的api
+    # https://xaoxuu.com/wiki/stellar/tag-plugins/express/#link-%E9%93%BE%E6%8E%A5%E5%8D%A1%E7%89%87
+    api:
