@@ -1,0 +1,32 @@
+name: ccm
+title: 基于Canvas的CAD制图软件
+subtitle: 'Web前端实现CAD制图功能'
+tags: [CG, Web]
+icon: /images/icons/翻滚猫.gif
+cover: /images/icons/翻滚猫.gif
+coverpage: true
+description: 'web前端实现2d制图功能'
+repo:
+search:
+  filter: /wiki/ccm/
+  placeholder: 在 ccm 中搜索...
+leftbar:
+  - tree
+  - related
+#comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/PUYIXIU/gitalk-comments/issues) 反馈。'
+#comments:
+#  service: giscus
+#  giscus:
+#    data-repo: PUYIXIU/gitalk-comments
+#    data-mapping: number
+#    data-term: 226
+base_dir: /wiki/ccm/ # 目录位置
+share: true # 是否分享
+# 目录树
+tree:
+  '项目本体':
+    - project-01-index
+  'Knova':
+    - Knova-01-index
+  'flatten-js':
+    - flatten-01-index

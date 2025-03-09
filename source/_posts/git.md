@@ -13,7 +13,7 @@ sticky:
 mermaid:
 katex:
 mathjax:
-topic:
+topic: 
 author:
 comments:
 indexing:

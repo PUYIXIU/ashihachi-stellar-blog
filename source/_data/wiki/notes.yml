@@ -1,0 +1,22 @@
+name: 备忘录
+title: 备忘录
+icon: /images/icons/coffee.png # 列表页图标
+cover: /images/icons/coffee.png # 封面页大图
+coverpage: [cover, title, description] # 封面页显示的内容
+
+#comments:
+#  service: giscus # 若你不适用默认的评论方式，需要添加此项
+#  giscus: # 需要你在主题配置文件_config.stellar.yml中设置好giscus的其他参数，其他评论方式同理
+#    'data-term': '23'
+#    'data-mapping': number
+leftbar:
+  - tree
+base_dir: /notes/
+tree:
+  '云游探索':
+    - index
+  'Web开发':
+    - nodejs
+  '游戏开发':
+    - cocos
+

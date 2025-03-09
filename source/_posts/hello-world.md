@@ -9,6 +9,7 @@ password:
 # 参考资料
 references:
   - '[Stellar官方文档](https://xaoxuu.com/wiki/stellar/pages/)'
+  - '[hexo博客](https://xaoxuu.com/wiki/stellar/pages/)'
 # 封面
 cover: /images/covers/java1.jpg # 动态拉取：workout,strava
 # 横幅
@@ -26,7 +27,7 @@ mermaid:
 katex:
 mathjax:
 # 可选
-topic: # 专栏 id
+topic:  # 专栏 id
 author:
 comments: # 设置 false 禁止评论
 indexing: # 设置 false 避免被搜索
@@ -906,4 +907,30 @@ name: Stellar
 title: Stellar
 subtitle: '每个人的独立博客 | Designed by xaoxuu'
 repo: xaoxuu/hexo-theme-stellar
+```
+
+
+##### <a href="https://xaoxuu.com/wiki/stellar/widgets/#timeline">timeline 时间线</a>
+
+```markdown _data/widgets.yml
+timeline:
+    layout: timeline
+    title: 近期动态
+    api: https://api.github.com/repos/xaoxuu/hexo-theme-stellar/issues # 若你想限制数量，在api链接后面加上?per_page=1指限制为1条
+    user: # 是否过滤只显示某个人发布的内容，如果要筛选多人，用英文逗号隔开
+    hide: # title,footer # 隐藏标题或底部 # 此功能需要 Stellar v1.13.0
+```
+
+#### <a href="https://xaoxuu.com/wiki/stellar/widgets/#%E7%81%B5%E6%B4%BB%E7%94%A8%E6%B3%95">灵活用法</a>
+
+指定的页面如果希望对组件的某个属性进行覆写时：
+
+```markdown _post/xxx.md
+---
+title: 某一篇文章
+leftbar:
+  - welcome # 只写一个字符串代表引用对应的通用组件
+  - override: my_timeline_lite
+    api: https://xxx
+---
 ```

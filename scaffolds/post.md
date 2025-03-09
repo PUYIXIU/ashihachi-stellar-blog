@@ -24,9 +24,9 @@ banner: /images/covers/xxx.jpg # 动态拉取：workout,strava
 
 # 插件
 sticky: # 数字越大越靠前
-mermaid:
-katex:
-mathjax:
+mermaid: # 图表
+katex: # 数学公式
+mathjax: # 数学公式
 # 可选
 topic: # 专栏 id
 author:
@@ -38,4 +38,5 @@ rightbar:
 h1: # 设置为 '' 隐藏标题
 type: # tech | story
 repo: # 指向的GitHub仓库信息
+
 ---
