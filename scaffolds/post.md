@@ -5,11 +5,10 @@ date: {{ date }}
 tags: []
 categories: []
 description:
-
+password:
 # 参考资料
 references:
   - '[]()'
-
 
 # 封面
 cover: /images/covers/xxx.jpg # 动态拉取：workout,strava
@@ -38,4 +37,5 @@ leftbar:
 rightbar:
 h1: # 设置为 '' 隐藏标题
 type: # tech | story
+repo: # 指向的GitHub仓库信息
 ---

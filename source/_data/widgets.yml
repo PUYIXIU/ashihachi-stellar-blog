@@ -1,0 +1,102 @@
+# 自定义组件：https://xaoxuu.com/wiki/stellar/widgets/
+# 1.配置 widgets.yml:
+#   '自定义组件1':
+#     layout: 模版·
+#     ...（其它属性）
+# 2.使用 xxx.md:
+#   ---
+#   leftbar: ['自定义组件1']
+#   ---
+
+# 文章/文档目录树
+toc:
+  layout: toc
+  list_number: false # 是否显示序号
+  min_depth: 2 # 建议不要低于 2 即从 H2 标签开始解析（H1标签用于文章大标题）
+  max_depth: 5 # 5 代表最多解析到 H5 标签
+  # 如果toc无法正常显示时，会显示fallback设置的内容
+  fallback: recent # Use a backup widget when toc does not exist.
+  collapse: true # true / false / auto (始终折叠/不折叠/自动折叠)
+
+# 显示最近的文章/wiki页面
+recent:
+  layout: recent
+  rss: # /atom.xml # npm i hexo-generator-feed
+  limit: 5 # Count of posts
+
+# 相同tags的其它列表
+related:
+  layout: related
+
+# 链接列表
+linklist:
+  layout: linklist
+  # columns:1 列表显示
+  # columns:2 每2个按钮放一行
+  columns: 1
+  items:
+    #- icon: '<svg...></svg>' # 或者 icons.yml 中设置的 icon 名称
+    - icon: github:logo # 或者 icons.yml 中设置的 icon 名称
+      title: 关于
+      url: /about/
+
+# 自定义markdown内容
+welcome:
+  layout: markdown
+  title: 欢迎欢迎
+  #linklist: # 与 linklist 组件写法相同
+  #  columns: 1
+  #  items:
+  #    - icon:
+  #      title:
+  #      url:
+  content: |
+    欢迎来到 **赛博珊瑚礁🪸** 
+    我是这间陋室的守门人 **Ashly**
+    家里那位八腕目正在 **赛博云游中**
+    请问要来杯 **海盐风味的咖啡☕** 吗？
+    <div style="display:flex;justify-content:center"><img src="/images/base/TaiFi.gif" /></div>
+  src: # 可以设置外部 md 文件链接
+
+# 标签云
+tagcloud:
+  layout: tagcloud
+  title: 标签云
+  # 标签云配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: false # 使用颜色
+  start_color:  # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color:  # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+# GitHub用户信息卡片
+ghuser:
+  layout: ghuser
+  username: puyixiu # your github login username
+  avatar: true # show avatar or not
+  menu: true # show menu or not
+
+# GitHub仓库信息
+# 在front-matter中，配置repo使用
+ghrepo:
+  layout: ghrepo
+
+# 时间线
+timeline:
+  layout: timeline
+  title: 近期评论
+  api: https://api.github.com/repos/PUYIXIU/ashihachi-stellar-blog/issues # 若你想限制数量，在api链接后面加上?per_page=1指限制为1条
+  user: # 是否过滤只显示某个人发布的内容，如果要筛选多人，用英文逗号隔开
+  hide: # title,footer # 隐藏标题或底部 # 此功能需要 Stellar v1.13.0
+
+# 愣着干啥，新建啊
+'朋友圈':
+  layout: timeline
+  title: 近期动态
+  api: https://api.vlts.cc/output_data/v1/xaoxuu/friends-rss-generator # 你的朋友圈数据文件地址
+  type: fcircle
+  limit: # 可通过这个限制最大数量

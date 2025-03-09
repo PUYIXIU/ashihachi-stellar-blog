@@ -37,15 +37,98 @@ logo:
   subtitle: '🐙足八桑🐙 | 八条腿各有想法'
 
 # 样式配置
-#style:
+style:
+
   # 左侧栏
-#  leftbar:
-#    # 背景颜色：纯色/渐变色/图片
-#    background-image: # url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
-#    # 模糊半径
-#    blur-px:  # 100px
-#    # 模糊颜色
-#    blur-bg:  # var(--alpha60)
+  #leftbar:
+  #  # 背景颜色：纯色/渐变色/图片
+  #  background-image: # url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+  #  # 模糊半径
+  #  blur-px:  # 100px
+  #  # 模糊颜色
+  #  blur-bg:  # var(--alpha60)
+
+  # 背景图片
+  #site:
+  #  background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.14/image/site-bg1@small.webp)
+  #  blur-px: 100px # 模糊半径
+  #  blur-bg: var(--alpha75) # 模糊颜色
+
+  # 颜色配置
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: 'hsl(212 16% 98%)' # 浅色背景颜色
+    block: 'hsl(212 8% 95%)' # 块背景颜色
+    code: 'hsl(14 100% 48%)' # 行内代码颜色
+    text: 'hsl(0 0% 20%)' # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: 'hsl(192 98% 55%)' # 主题色
+    accent: 'hsl(14 100% 57%)' # 强调色
+    link: 'hsl(207 90% 54%)' # 超链接颜色
+    button: 'hsl(192 98% 55%)' # 按钮颜色
+    hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
+
+  # 代码块
+  codeblock:
+    # https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/
+    # 预览：https://highlightjs.org/examples
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/androidstudio.min.css
+
+  # 字体尺寸
+  font-size:
+    root: 16px
+    body: .9357rem #15px
+    code: 85%
+    codeblock: 0.8125rem # 13px
+
+  # 字体
+  font-family:
+    logo: '"Noto Serif SC", "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"Noto Serif SC", "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+
+  # 文本对齐方向
+  #text-align: left # justify/left/center/right
+
+  # 圆角大小
+  #border-radius:
+  #  card: 12px # 卡片圆角
+  #  block: 12px # 块圆角
+  #  bar: 6px # 导航栏圆角
+  #  image: 6px # 图片圆角
+
+  # 渐变色
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%)'
+    search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
+
+# 代码复制
+copycode:
+  enable: true
+  js: /js/plugins/copycode.js
+  default_text: 'Copy' # 按钮显示文字
+  success_text: 'Copied' # 复制成功信息
+
+# 页面缓入效果
+#scrollreveal:
+#  enable: false
+#  js: https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+#  distance: 4px # 执行距离
+#  duration: 400 # ms # 执行时长
+#  interval: 100 # ms # 执行间隔（时间）
+#  scale: 0.1 # 0.1~1 # 执行方式（缩放）
+
+# 图片懒加载
+lazyload:
+  enable: true # [hexo clean && hexo s] is required after changing this value.
+  js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  transition: blur # blur, fade
+
+# 默认打开
+loading:
+  loading: 正在加载
+  error: 加载失败，请稍后重试。
 
 # 侧壁那栏这功能导航菜单
 menubar:
@@ -108,6 +191,27 @@ footer:
       icon: codepen:logo
       url: https://codepen.io/jnkzhatk-the-builder
 
+  # 站点地图
+  #sitemap:
+  #  '博客':
+  #    - '[近期](/)'
+  #    - '[分类](/categories/)'
+  #    - '[标签](/tags/)'
+  #    - '[归档](/archives/)'
+  #  '项目':
+  #    - '[开源库](/)'
+  #  '社交':
+  #    - '[友链](/)'
+  #    - '[留言板](/)'
+  #  '更多':
+  #    - '[关于本站](/)'
+  #    - '[GitHub](/)'
+
+  # 自定义content
+  content: | # 支持 Markdown 格式
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+
 # 标签组件配置
 tag_plugins:
   # emoji资源配置
@@ -142,3 +246,39 @@ services:
     # 设置自定义的抓取link网站信息的api
     # https://xaoxuu.com/wiki/stellar/tag-plugins/express/#link-%E9%93%BE%E6%8E%A5%E5%8D%A1%E7%89%87
     api:
+
+# 评论配置
+comments:
+  # beaudar, utterances, giscus, twikoo, waline, artalk
+  service: beaudar
+  # 评论懒加载
+  lazyload: true
+  beaudar:
+    repo: PUYIXIU/gitalk-comments
+
+# 顶部 tab 栏
+site_tree:
+  # https://xaoxuu.com/wiki/stellar/widgets/#%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%B8%83%E5%B1%80
+  #blog:
+  #  nav_tabs: # 近期发布 分类 标签 归档 and ...
+  #    '朋友文章': /friends/rss/ # 这里填写的链接要与对应页面一致，否则可能无法正确高亮
+
+  # 主页配置
+  home:
+      leftbar: welcome, tagcloud, recent
+      rightbar: timeline
+  # 博客文章页配置
+  post:
+    menu_id: post
+    leftbar: related, recent
+    rightbar: ghrepo, toc
+
+# 注入
+inject:
+  head:
+    - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+  script:
+    - <script async src="https://gcore.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+    - <script async src="/scripts/test.js"></script> # 测试注入脚本
+    #- <script src="/scripts/snowflake.js"></script> # 下雪效果
+    #- <script async src="/scripts/fireworks.js"></script> # 鼠标点击烟花效果
