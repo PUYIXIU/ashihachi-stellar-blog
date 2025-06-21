@@ -5,11 +5,11 @@ date: 2025-02-21 13:02:49
 tags: [hexo]
 categories: []
 description:
-password: 
+password:
 # 参考资料
 references:
-  - '[Stellar官方文档](https://xaoxuu.com/wiki/stellar/pages/)'
-  - '[hexo博客](https://xaoxuu.com/wiki/stellar/pages/)'
+  - "[Stellar官方文档](https://xaoxuu.com/wiki/stellar/pages/)"
+  - "[hexo博客](https://xaoxuu.com/wiki/stellar/pages/)"
 # 封面
 cover: /images/covers/java1.jpg # 动态拉取：workout,strava
 # 横幅
@@ -27,7 +27,7 @@ mermaid:
 katex:
 mathjax:
 # 可选
-topic:  # 专栏 id
+topic: # 专栏 id
 author:
 comments: # 设置 false 禁止评论
 indexing: # 设置 false 避免被搜索
@@ -43,12 +43,15 @@ repo: xaoxuu/hexo-theme-stellar
 
 <!-- more -->
 
-## 1️⃣基本使用
+{% link https://xaoxuu.com/blog/20221029/ icon:https://xaoxuu.com/assets/xaoxuu/avatar/rect-256@2x.png Stellar-每个人的独立博客 %}
 
-### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/express/">💭表达类标签</a>
+{% link https://hexo.io/zh-cn/docs/ icon:https://hexo.io/logo.svg 文档 | Hexo %}
 
-#### emoji表情包
+## 1️⃣ 基本使用
 
+### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/express/">💭 表达类标签</a>
+
+#### emoji 表情包
 
 {% emoji 蛋糕 %}
 {% emoji twemoji 1f634 %}
@@ -64,8 +67,7 @@ repo: xaoxuu/hexo-theme-stellar
 {% emoji blobcat blobcatheartpride height:3em %}
 ```
 
-
-- <a href="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/">blobcat表情库</a>
+- <a href="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/">blobcat 表情库</a>
 
 #### icon 图标标签
 
@@ -93,32 +95,32 @@ repo: xaoxuu/hexo-theme-stellar
 
 #### mark 标记
 
-{% mark 默认 %} 
-{% mark 红 color:red %} 
-{% mark 橙 color:orange %} 
-{% mark 黄 color:yellow %} 
-{% mark 绿 color:green %} 
-{% mark 青 color:cyan %} 
-{% mark 蓝 color:blue %} 
-{% mark 紫 color:purple %} 
-{% mark 亮 color:light %} 
-{% mark 暗 color:dark %} 
-{% mark 警告 color:warning %} 
-{% mark 错误 color:error %} 
+{% mark 默认 %}
+{% mark 红 color:red %}
+{% mark 橙 color:orange %}
+{% mark 黄 color:yellow %}
+{% mark 绿 color:green %}
+{% mark 青 color:cyan %}
+{% mark 蓝 color:blue %}
+{% mark 紫 color:purple %}
+{% mark 亮 color:light %}
+{% mark 暗 color:dark %}
+{% mark 警告 color:warning %}
+{% mark 错误 color:error %}
 
 ```markdown
-{% mark 默认 %} 
-{% mark 红 color:red %} 
-{% mark 橙 color:orange %} 
-{% mark 黄 color:yellow %} 
-{% mark 绿 color:green %} 
-{% mark 青 color:cyan %} 
-{% mark 蓝 color:blue %} 
-{% mark 紫 color:purple %} 
-{% mark 亮 color:light %} 
-{% mark 暗 color:dark %} 
-{% mark 警告 color:warning %} 
-{% mark 错误 color:error %} 
+{% mark 默认 %}
+{% mark 红 color:red %}
+{% mark 橙 color:orange %}
+{% mark 黄 color:yellow %}
+{% mark 绿 color:green %}
+{% mark 青 color:cyan %}
+{% mark 蓝 color:blue %}
+{% mark 紫 color:purple %}
+{% mark 亮 color:light %}
+{% mark 暗 color:dark %}
+{% mark 警告 color:warning %}
+{% mark 错误 color:error %}
 ```
 
 #### hashtag 标签
@@ -145,7 +147,7 @@ description: 图片描述
 download: href # 下载地址，设置此值后鼠标放在图片上会显示下载地址，如果下载地址为图片地址，可以设置为 true
 width: 200px # 图片宽度
 padding: 16px # 图片四周填充宽度
-bg: '#ffffff' # 图片区域背景颜色，16进制
+bg: "#ffffff" # 图片区域背景颜色，16进制
 fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大，如果放大地址为图片地址，可以设置为 true
 ```
 
@@ -168,21 +170,25 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 #### quote 引用
 
 {% quot 居中引用 %}
+
 ```markdown
 {% quot 居中引用 %}
 ```
 
 {% quot 自定义配置 icon:coffee %}
+
 ```markdown
 {% quot 自定义配置 icon:coffee %}
 ```
 
 {% quot 也可以指定任意图标 prefix:cat-head:64 suffix:dog-head:64 %}
+
 ```markdown
 {% quot 也可以指定任意图标 prefix:cat-head:64 suffix:dog-head:64 %}
 ```
 
 {% quot 特别引用 el:h4 icon:talk %}
+
 ```markdown
 {% quot 特别引用 el:h4 icon:talk %}
 ```
@@ -204,13 +210,21 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 #### paper 纸张标签
 
 {% paper style:underline title:《忏悔录》节选 author:卢梭 date:《忏悔录》 footer:第二、三章节选 %}
+
 <!-- line left -->
+
 第二章
+
 <!-- paragraph -->
+
 这话不是根据我自己的经验，而是根据我的观察，因为我知道自己的经验是完全不适于别人的。
+
 <!-- line right -->
+
 第三章
+
 <!-- paragraph -->
+
 可是我无论怎样用功，进步还是很小。说起来真是奇怪，我虽然也有相当的理解能力，我却从来不能从老师那里——父亲和朗拜尔西埃先生是例外——学到什么东西。
 我另外的一些知识，都是我自学来的，这个以后就会清楚的。我那不能忍受任何束缚的思想不肯服从时间的限制；担心学不会的心情妨碍着我专心听讲：
 生怕由于自己不懂而让教我的人着急的心情促使我装懂，教的人一直往下教，我却什么也不懂。**我想按自己的步调行动，不愿顺从别人的步调。**
@@ -218,13 +232,21 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```markdown
 {% paper style:underline title:《忏悔录》节选 author:卢梭 date:《忏悔录》 footer:第二、三章节选 %}
+
 <!-- line left -->
+
 第二章
+
 <!-- paragraph -->
+
 这话不是根据我自己的经验，而是根据我的观察，因为我知道自己的经验是完全不适于别人的。
+
 <!-- line right -->
+
 第三章
+
 <!-- paragraph -->
+
 可是我无论怎样用功，进步还是很小。说起来真是奇怪，我虽然也有相当的理解能力，我却从来不能从老师那里——父亲和朗拜尔西埃先生是例外——学到什么东西。
 我另外的一些知识，都是我自学来的，这个以后就会清楚的。我那不能忍受任何束缚的思想不肯服从时间的限制；担心学不会的心情妨碍着我专心听讲：
 生怕由于自己不懂而让教我的人着急的心情促使我装懂，教的人一直往下教，我却什么也不懂。**我想按自己的步调行动，不愿顺从别人的步调。**
@@ -239,12 +261,19 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```markdown 正文可设置段落格式
 <!-- section 小节标题 -->
+
 小节标题，居中显示
+
 <!-- paragraph -->
+
 段落，首行缩进两个字符
+
 <!-- line left -->
+
 段落左对齐
+
 <!-- line right -->
+
 段落右对齐
 ```
 
@@ -276,7 +305,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```markdown
 - color: red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error
-{% note 备注标题 备注内容 [color:color] %}
+  {% note 备注标题 备注内容 [color:color] %}
 ```
 
 #### link 链接卡片
@@ -294,9 +323,9 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```markdown
 - size: 默认 | xs（最小号）
-{% button text url [icon:key/src] [color:color] [size:xs] %}
-{% button 文档 /wiki  icon:solar:notebook-bookmark-bold-duotone %}
-{% button 探索 /explore  icon:solar:planet-bold-duotone size:xs %}
+  {% button text url [icon:key/src] [color:color] [size:xs] %}
+  {% button 文档 /wiki  icon:solar:notebook-bookmark-bold-duotone %}
+  {% button 探索 /explore  icon:solar:planet-bold-duotone size:xs %}
 ```
 
 #### okr 目标管理
@@ -305,25 +334,33 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 {% okr o1 %}
 
-2025年小目标：全球旅行✈️
+2025 年小目标：全球旅行 ✈️
 从家门口的小公园开始吧
 
 <!-- okr kr1 percent:1 -->
+
 重构 tag-plugins 和 wiki 系统
+
 - 当 {% mark KR %} 进度为 100% 时，标签默认显示为 {% mark color:green 已完成 %}
 - 当 {% mark KR %} 未设置进度时，默认为 {% mark 0% %}
 - 当 {% mark O %} 未设置进度时，则显示所有 {% mark KR %} 进度平均值
 
 <!-- okr kr2 percent:0.9 status:off_track -->
+
 完成主要页面设计稿
 {% tabs align:left %}
+
 <!-- tab 小提示1 -->
-您可以在 _config.yml 文件中修改标签的颜色和文案
+
+您可以在 \_config.yml 文件中修改标签的颜色和文案
+
 <!-- tab 小提示2 -->
-您可以在 _config.yml 文件中增加任意的标签配置
+
+您可以在 \_config.yml 文件中增加任意的标签配置
 {% endtabs %}
 
 <!-- okr kr3 percent:-0.12 status:unfinished -->
+
 完成前置准备工作
 {% checkbox 在咸水和海滩之间找一亩地 %}
 {% checkbox 求出圆周率后15位 %}
@@ -331,6 +368,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 {% checkbox 去地狱里走两步 %}
 
 <!-- okr kr-4 status:at_risk -->
+
 开发、测试和发布
 
 {% endokr %}
@@ -401,9 +439,9 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ```
 
 - type
-  - 2表示歌曲
-  - 0表示歌单
-- netease: 歌曲/歌单id，在网易云分享链接中能找到
+  - 2 表示歌曲
+  - 0 表示歌单
+- netease: 歌曲/歌单 id，在网易云分享链接中能找到
 - autoplay
   - 1 表示自动播放
   - 0 表示手动播放
@@ -427,7 +465,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```markdown
 - 由链接组成的导航栏
-{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/xaoxuu/) %}
+  {% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/xaoxuu/) %}
 ```
 
 #### frame 设备框架
@@ -460,26 +498,34 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 - 这是 {% kbd 键盘样式 %} 标签，试一试：{% kbd ⌘ %} + {% kbd D %}
 ```
 
-### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/data">🔢数据类标签</a>
+### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/data">🔢 数据类标签</a>
 
 #### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/data/#timeline-%E6%97%B6%E9%97%B4%E7%BA%BF">timeline 时间线</a>
 
 {% timeline %}
+
 <!-- node 2025 年 2 月 25 日 -->
+
 今天科三考试最后熄火，还好我平时练车熄火太多所以很熟，回空挡打火换一档完成靠边停车，贴着及格线过了，激动的心颤抖的手
 {% image /images/meme/idrive.jpg width:300px %}
+
 <!-- node 2025 年 2 月 24 日 -->
-下午科目三模拟3把连挂，教练差点气撅过去
+
+下午科目三模拟 3 把连挂，教练差点气撅过去
 {% image /images/meme/acat.jpg width:200px %}
 {% endtimeline %}
 
 ```markdown
 {% timeline %}
+
 <!-- node 2025 年 2 月 25 日 -->
+
 今天科三考试最后熄火，还好我平时练车熄火太多所以很熟，回空挡打火换一档完成靠边停车，贴着及格线过了，激动的心颤抖的手
 {% image /images/meme/idrive.jpg width:300px %}
+
 <!-- node 2025 年 2 月 24 日 -->
-下午科目三模拟3把连挂，教练差点气撅过去
+
+下午科目三模拟 3 把连挂，教练差点气撅过去
 {% image /images/meme/acat.jpg width:200px %}
 {% endtimeline %}
 ```
@@ -493,7 +539,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ```yaml /source/_data/links/exm_blogs.yml
 - title: 明眸如初
   url: https://www.zywvvd.com/
-  cover: 
+  cover:
   icon: https://www.zywvvd.com/image/avatar.png
   description: Hexo-Butterfly搭建，访问统计的3d模型非常炫酷
 ```
@@ -519,18 +565,18 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ```
 
 #### ghcard 卡片
+
 {% link https://github.com/anuraghazra/github-readme-stats icon:/images/icons/github.png GitHub Card API %}
 
 {% ghcard puyixiu theme:dark %}
 {% ghcard PUYIXIU/ashihachi-stellar-blog theme:dark %}
-
 
 ```markdown
 {% ghcard puyixiu theme:dark %}
 {% ghcard PUYIXIU/ashihachi-stellar-blog theme:dark %}
 ```
 
-### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/container/">📦容器类标签</a>
+### <a href="https://xaoxuu.com/wiki/stellar/tag-plugins/container/">📦 容器类标签</a>
 
 #### box 盒子容器
 
@@ -544,7 +590,6 @@ title: 标题
 color: red/orange/yellow/green/cyan/blue/purple/light/dark
 child: codeblock | tabs
 ```
-
 
 #### folding 折叠容器
 
@@ -567,21 +612,33 @@ color: red/orange/yellow/green/cyan/blue/purple/light/dark
 #### folders 聚合折叠容器
 
 {% folders %}
+
 <!-- folder 抽屉A -->
+
 这个抽屉是空的
+
 <!-- folder 抽屉B -->
+
 这个抽屉是空的
+
 <!-- folder 抽屉C -->
+
 找到了一把手电筒
 {% endfolders %}
 
 ```markdown
 {% folders %}
+
 <!-- folder 抽屉A -->
+
 这个抽屉是空的
+
 <!-- folder 抽屉B -->
+
 这个抽屉是空的
+
 <!-- folder 抽屉C -->
+
 找到了一把手电筒
 {% endfolders %}
 ```
@@ -589,35 +646,45 @@ color: red/orange/yellow/green/cyan/blue/purple/light/dark
 #### tabs 分栏容器
 
 {% tabs active:2 align:center %}
+
 <!-- tab 图片 -->
+
 {% image /images/base/test.jpg width:300px %}
 
 <!-- tab 代码块 -->
+
 ```javascript
-let x = 123
-console.log("Hello World")
+let x = 123;
+console.log("Hello World");
 ```
 
 <!-- tab 表格 -->
-| a | b | c |
+
+| a   | b   | c   |
 | --- | --- | --- |
-| a1 | b1 | c1 |
-| a2 | b2 | c2 |
+| a1  | b1  | c1  |
+| a2  | b2  | c2  |
+
 {% endtabs %}
 
 ```markdown
 {% tabs active:2 align:center %}
+
 <!-- tab 图片 -->
+
 {% image /images/base/test.jpg width:300px %}
 
 <!-- tab 代码块 -->
+
 content
 
 <!-- tab 表格 -->
-| a | b | c |
+
+| a   | b   | c   |
 | --- | --- | --- |
-| a1 | b1 | c1 |
-| a2 | b2 | c2 |
+| a1  | b1  | c1  |
+| a2  | b2  | c2  |
+
 {% endtabs %}
 ```
 
@@ -637,7 +704,9 @@ active: 激活标签
 ```
 
 {% grid %}
+
 <!-- cell -->
+
 {% image /images/photos/gui_shan_han_mu.jpg fancybox:true %}
 
 <!-- cell -->
@@ -654,9 +723,13 @@ active: 激活标签
 
 ```markdown
 {% grid %}
+
 <!-- cell -->
+
 content left
+
 <!-- cell -->
+
 content right
 {% endgrid %}
 ```
@@ -680,28 +753,44 @@ br: 圆角半径
 {% quot el:h4 背景样式 %}
 
 {% grid bg:box w:150px %}
+
 <!-- cell -->
+
 cell 1
+
 <!-- cell -->
+
 cell 2
+
 <!-- cell -->
+
 cell 3
+
 <!-- cell -->
+
 cell 4
 {% endgrid %}
 
 {% grid bg:card w:150px %}
+
 <!-- cell -->
+
 cell 1
+
 <!-- cell -->
+
 cell 2
+
 <!-- cell -->
+
 cell 3
+
 <!-- cell -->
+
 cell 4
 {% endgrid %}
 
-#### gallery 图库 
+#### gallery 图库
 
 {% box 类似效果 %}
 
@@ -783,7 +872,7 @@ effect: cards | coverflow
 width: min | max
 ```
 
-## 2️⃣进阶用法
+## 2️⃣ 进阶用法
 
 ### <a href="http://xaoxuu.com/wiki/stellar/widgets">自定义小组件</a>
 
@@ -797,21 +886,21 @@ width: min | max
 
 ```markdown _data/widgets.yml
 toc:
-  layout: toc
-  list_number: false # 是否显示序号
-  min_depth: 2 # 建议不要低于 2 即从 H2 标签开始解析（H1标签用于文章大标题）
-  max_depth: 5 # 5 代表最多解析到 H5 标签
-  fallback: recent # Use a backup widget when toc does not exist.
-  collapse: false # true / false / auto (始终折叠/不折叠/自动折叠)
+layout: toc
+list_number: false # 是否显示序号
+min_depth: 2 # 建议不要低于 2 即从 H2 标签开始解析（H1 标签用于文章大标题）
+max_depth: 5 # 5 代表最多解析到 H5 标签
+fallback: recent # Use a backup widget when toc does not exist.
+collapse: false # true / false / auto (始终折叠/不折叠/自动折叠)
 ```
 
 ##### recent 近期文章
 
 ```markdown _data/widgets.yml
 recent:
-  layout: recent
-  rss: # /atom.xml # npm i hexo-generator-feed
-  limit: 5 # Count of posts
+layout: recent
+rss: # /atom.xml # npm i hexo-generator-feed
+limit: 5 # Count of posts
 ```
 
 ##### related 相关文章
@@ -820,7 +909,7 @@ recent:
 
 ```markdown _data/widgets.yml
 related:
-  layout: related
+layout: related
 ```
 
 ##### linkList 链接列表
@@ -830,72 +919,72 @@ related:
 ```markdown _data/widgets.yml
 linklist:
 layout: linklist
+
 # columns:1 列表显示
-# columns:2 每2个按钮放一行
+
+# columns:2 每 2 个按钮放一行
+
 columns: 1
 items:
 #- icon: '<svg...></svg>' # 或者 icons.yml 中设置的 icon 名称
+
 - icon: github:logo # 或者 icons.yml 中设置的 icon 名称
-title: 关于
-url: /about/
+  title: 关于
+  url: /about/
 ```
 
 ##### markdown 文本内容
 
 ```markdown _data/widgets.yml
 welcome:
-    layout: markdown
-    title: 欢迎欢迎
-    #linklist: # 与 linklist 组件写法相同
-    #  columns: 1
-    #  items:
-    #    - icon:
-    #      title:
-    #      url:
-    content: |
-        欢迎来到 **赛博珊瑚礁🪸**
-        我是这间陋室的守门人 **Ashly**
-        家里那位八腕目正在 **赛博云游中**
-        请问要来杯 **海盐风味的咖啡☕** 吗？
-        <div style="display:flex;justify-content:center"><img src="/images/base/TaiFi.gif" /></div>
-        src: # 可以设置外部 md 文件链接
+layout: markdown
+title: 欢迎欢迎
+#linklist: # 与 linklist 组件写法相同 # columns: 1 # items: # - icon: # title: # url:
+content: |
+欢迎来到 **赛博珊瑚礁 🪸**
+我是这间陋室的守门人 **Ashly**
+家里那位八腕目正在 **赛博云游中**
+请问要来杯 **海盐风味的咖啡 ☕** 吗？
+
+<div style="display:flex;justify-content:center"><img src="/images/base/TaiFi.gif" /></div>
+src: # 可以设置外部 md 文件链接
 ```
 
 ##### tagcloud 标签云
 
 ```markdown _data/widgets.yml
 tagcloud:
-  layout: tagcloud
-  title: 标签云
-  # 标签云配置
-  min_font: 12
-  max_font: 24
-  amount: 100
-  orderby: name
-  order: 1 # 1, sac 升序；-1, desc 降序
-  color: false # 使用颜色
-  start_color:  # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
-  end_color:  # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
-  show_count: false # 显示每个标签的文章总数
+layout: tagcloud
+title: 标签云
+
+# 标签云配置
+
+min_font: 12
+max_font: 24
+amount: 100
+orderby: name
+order: 1 # 1, sac 升序；-1, desc 降序
+color: false # 使用颜色
+start_color: # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+end_color: # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+show_count: false # 显示每个标签的文章总数
 ```
 
-
-##### ghuser github用户面板
+##### ghuser github 用户面板
 
 ```markdown _data/widgets.yml
 ghuser:
-    layout: ghuser
-    username: github # your github login username
-    avatar: true # show avatar or not
-    menu: true # show menu or not
+layout: ghuser
+username: github # your github login username
+avatar: true # show avatar or not
+menu: true # show menu or not
 ```
 
-
-##### ghrepo github项目面板
+##### ghrepo github 项目面板
 
 ```markdown _data/widgets.yml
 ghrepo:
-    layout: ghrepo
+layout: ghrepo
 ```
 
 ```markdown _posts/xxx.md
@@ -909,16 +998,15 @@ subtitle: '每个人的独立博客 | Designed by xaoxuu'
 repo: xaoxuu/hexo-theme-stellar
 ```
 
-
 ##### <a href="https://xaoxuu.com/wiki/stellar/widgets/#timeline">timeline 时间线</a>
 
 ```markdown _data/widgets.yml
 timeline:
-    layout: timeline
-    title: 近期动态
-    api: https://api.github.com/repos/xaoxuu/hexo-theme-stellar/issues # 若你想限制数量，在api链接后面加上?per_page=1指限制为1条
-    user: # 是否过滤只显示某个人发布的内容，如果要筛选多人，用英文逗号隔开
-    hide: # title,footer # 隐藏标题或底部 # 此功能需要 Stellar v1.13.0
+layout: timeline
+title: 近期动态
+api: https://api.github.com/repos/xaoxuu/hexo-theme-stellar/issues # 若你想限制数量，在 api 链接后面加上?per_page=1 指限制为 1 条
+user: # 是否过滤只显示某个人发布的内容，如果要筛选多人，用英文逗号隔开
+hide: # title,footer # 隐藏标题或底部 # 此功能需要 Stellar v1.13.0
 ```
 
 #### <a href="https://xaoxuu.com/wiki/stellar/widgets/#%E7%81%B5%E6%B4%BB%E7%94%A8%E6%B3%95">灵活用法</a>

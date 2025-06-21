@@ -17,6 +17,7 @@ tree:
     - index
   'Web开发':
     - nodejs
+    - npm
   '游戏开发':
     - cocos
 
