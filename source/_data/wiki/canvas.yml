@@ -1,15 +1,15 @@
-name: ccm
-title: 基于Canvas的CAD制图软件
-subtitle: 'Web前端实现CAD制图功能'
+name: canvas
+title: Canvas
+subtitle: 'Web端绘图'
 tags: [CG, Web]
 icon: /images/icons/翻滚猫.gif
 cover: /images/icons/翻滚猫.gif
 coverpage: true
-description: 'web前端实现2d制图功能'
+description: '使用canvas实现各种绘图效果'
 repo:
 search:
-  filter: /wiki/ccm/
-  placeholder: 在 ccm 中搜索...
+  filter: /wiki/canvas/
+  placeholder: 在 canvas 中搜索...
 leftbar:
   - tree
   - related
@@ -20,7 +20,7 @@ leftbar:
 #    data-repo: PUYIXIU/gitalk-comments
 #    data-mapping: number
 #    data-term: 226
-base_dir: /wiki/ccm/ # 目录位置
+base_dir: /wiki/canvas/ # 目录位置
 share: true # 是否分享
 # 目录树
 tree:
