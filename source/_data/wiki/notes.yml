@@ -13,8 +13,9 @@ leftbar:
   - tree
 base_dir: /notes/
 tree:
-  '云游探索':
-    - index
+  'emoji':
+    - BlobCat
+    -
   'Web开发':
     - nodejs
     - npm
