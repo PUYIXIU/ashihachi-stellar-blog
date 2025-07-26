@@ -63,3 +63,37 @@ anim.start()
 ```
 {% image ./imgs/konva/OptimizeAnimation.gif 通过减少动画帧实现优化  width:300px fancybox:true %}
 
+# Batch Draw 批量绘制
+
+http://konvajs-doc.bluehymn.com/docs/performance/Batch_Draw.html
+
+- 典型场景
+  - 监听鼠标位置更新单个元素时，会引起整张画布频繁地更新
+- 这种情况可能会导致极度密集的重绘
+- 可以通过batchDraw，将重绘系统挂载到动画引擎上
+
+```javascript
+// 整体重绘
+layer.draw()
+// 批量重绘
+layer.batchDraw()
+```
+
+# Shape Redraw 图形重绘
+
+```javascript
+// 画布重绘
+layer.draw()
+// 节点重绘
+shape.draw()
+```
+
+Konva支持单独重新绘制某个图形，并且不会刷新整张画布，
+但重绘节点必须满足如下条件：
+- 节点不能是半透明的
+- 节点不需要与其他节点重叠
+  - 重绘的节点会覆盖在其他节点的上层
+- 节点绘制结果不需要依赖下层内容（比如没有混合模式）
+
+
+{% image ./imgs/konva/ShapeRedraw.gif 重绘单个节点  width:300px fancybox:true %}
