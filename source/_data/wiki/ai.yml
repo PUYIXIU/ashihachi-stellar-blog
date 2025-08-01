@@ -1,0 +1,28 @@
+name: ai
+title: AI
+subtitle: 'AI知识库'
+tags: [AI]
+icon: /images/icons/翻滚猫.gif
+cover: /images/icons/翻滚猫.gif
+coverpage: true
+description: '关于AI的学习笔记'
+repo:
+search:
+  filter: /wiki/ai/
+  placeholder: 在 ai 中搜索...
+leftbar:
+  - tree
+  - related
+#comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/PUYIXIU/gitalk-comments/issues) 反馈。'
+#comments:
+#  service: giscus
+#  giscus:
+#    data-repo: PUYIXIU/gitalk-comments
+#    data-mapping: number
+#    data-term: 226
+base_dir: /wiki/ai/ # 目录位置
+share: true # 是否分享
+# 目录树
+tree:
+  'AI知识库':
+    - ai-01-index

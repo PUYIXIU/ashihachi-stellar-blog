@@ -50,11 +50,11 @@ welcome:
   #    - icon:
   #      title:
   #      url:
+  # 欢迎来到 **赛博珊瑚礁🪸**
+  # 我是这间陋室的守门人 **Ashly**
+  # 家里那位八腕目正在 **赛博云游中**
+  # 请问要来杯 **海盐风味的咖啡☕** 吗？
   content: |
-    欢迎来到 **赛博珊瑚礁🪸** 
-    我是这间陋室的守门人 **Ashly**
-    家里那位八腕目正在 **赛博云游中**
-    请问要来杯 **海盐风味的咖啡☕** 吗？
     <div style="display:flex;justify-content:center"><img src="/images/base/TaiFi.gif" /></div>
   src: # 可以设置外部 md 文件链接
 
