@@ -43,7 +43,7 @@ linklist:
 # 自定义markdown内容
 welcome:
   layout: markdown
-  title: 欢迎欢迎
+  title: Welcome
   #linklist: # 与 linklist 组件写法相同
   #  columns: 1
   #  items:

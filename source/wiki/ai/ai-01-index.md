@@ -3,54 +3,30 @@ wiki: ai # 项目id
 title: ai介绍
 ---
 
-# 主流AI编程工具
+- chatgpt 免费版使用
+- claude code（很强） 使用教程
+- trae国内版使用
+
+# 相关技术概念解释
+
+## MCP技术简介
+
+MCP（Model Context Protocol）模型上下文协议
+
+gpt答案：https://chatgpt.com/c/688d6f54-7534-800a-b951-7f09a2a39c7b
+
+上下文协议对日常生活中的人也适用，比如当前网络上出现的MEME文化，
+（此处贴表情包）
+只有结合众多网络文化和故事背景去看，MEME才有真正的意义。
+这点对AI模型来说也是一样，MCP能帮助模型记忆和理解对话背景，比如：
+用户：“我没什么朋友，平时一个人应该怎么排解孤独？”
+模型：“我推荐少宅在家里，多出门进行户外体育运动。”
+用户：“有什么推荐的户外运动类型吗？”
+模型（失忆版）：“我推荐三五好友结伴打羽毛球。”
+模型（上下文版）：“独自一人的话可以选择徒步或者单车旅行。”
 
 
-
-- cursor（token消耗数/次数/ide）
-  - 模型
-    - claude系列
-    - gemini系列
-    - openai系列
-    - deepseek系列
-- augmentcode（插件/次数）
-  - 模型
-    - claude-4-sonnet
-- trae（ide/次数）
-  - 模型
-    - 国际版
-      - claude系列
-      - gemini系列
-      - openai系列
-      - deepseek系列
-    - 国内版
-      - 豆包系列
-      - DeepSeek系列
-- claude-code（token消耗数/命令行）
-  - 模型
-    - claude系列
-- windsurf（次数/ide）
-  - 模型
-    - gemini系列
-    - openai系列
-    - deepseek系列
-    - claude-4以上模型需要自己单独购买API对接
-- 阿里灵码（免费/插件/IDE）
-  - 模型
-    - deepseek系列
-    - Qwen系列
-- codebuddy（免费/插件）
-  - 模型
-    - 混元系列
-    - DeepSeek系列
-
-- 小项目练手
-  - trae
-  - windsurf
-  - trae国内版
-  - 灵码
-  - codebuddy
-- 中大型项目
-  - cursor
-  - augment-code
-  - trae
+所谓Protocol，即用于规范如何传递这些上下文信息。
+比如多轮对话后，哪些信息是有效的，哪些可以被忘记。
+举个例子：
+期末考试前，为了不挂科熬夜背的那些知识点，考完之后就可以忘记了。
