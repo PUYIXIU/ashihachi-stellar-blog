@@ -25,6 +25,7 @@ share: true # 是否分享
 # 目录树
 tree:
   'AI知识库':
-    - ai-01-index
+    - index
     - ai-02-ClaudeCode
     - ai-03-Trae
+    - ai-04-Cursor
