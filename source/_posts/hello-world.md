@@ -93,6 +93,8 @@ repo: xaoxuu/hexo-theme-stellar
 {% icon octopus:32 color:purple %}
 ```
 
+自定义图标可以在 {% mark source/_data/icons.yml color:yellow %} 中配置
+
 #### mark 标记
 
 {% mark 默认 %}
