@@ -79,8 +79,6 @@ references:
 
 {% endbox %}
 
-
-
 <!-- folder 与Agent聊天 / Chat with Agent -->
 - Cursor上限和下限跨度最大的功能
 - 下到联网问个小问题，上到串通整个工作流
@@ -88,6 +86,7 @@ references:
 <!-- folder Agent后台处理 / Handoff word to Background Agent -->
 - 用户和Cursor异步并行工作
 - 可以通过编辑器或外部集成（如Slack）访问
+- 目前还没有用到，有需要参考[文档](https://docs.cursor.com/zh/background-agent)
 <!-- folder 编写规则 / Write a rule -->
 - 创建mdc文件
 - 定义一些规则，相当于通用持久记忆
@@ -95,7 +94,6 @@ references:
 - 集成外部工具的模型上下文协议
 - 连接数据库、API和文档源
 {% endfolders %}
-
 
 <!-- tab 概念 Concepts -->
 {% folders %}
@@ -132,17 +130,63 @@ references:
 - 每个模型具有不同的速度和能力特性
 {% endfolders %}
 
-
-
 {% endtabs %}
+
+{% endbox %}
+
+## 核心：智能体
+
+{% box 概览 Overview %}
+
+{% folders %}
+<!-- folder 模式 Modes -->
+{% box %}
+{% grid c:2  bg:card %}
+<!-- cell -->
+**Agent**
+- 自主探索、多文件编辑
+- 权限：所有工具
+<!-- cell -->
+**Ask**
+- 只读探索、无自动更改
+- 权限：搜索工具
+<!-- cell -->
+**Manual**
+- 直接文件编辑、具有明确控制
+- 权限：编辑工具
+- 只编辑明确选择的文件
+- 在确切知道要编辑什么时效果最佳，选择正确的文件并给出清晰的指令
+<!-- cell -->
+**Custom**
+- 用户定义的功能
+- 对特定的工具组合和指令创建自定义模式
+
+{% endgrid %}
+
+{% endbox %}
+<!-- folder 工具 Tools -->
+这个抽屉是空的
+<!-- folder 应用更改 Apply Changes -->
+找到了一把手电筒
+<!-- folder 审查差异 Review Diffs -->
+找到了一把手电筒
+<!-- folder 聊天标签页 Chat Tabs -->
+找到了一把手电筒
+<!-- folder 检查点 Checkpoints -->
+找到了一把手电筒
+<!-- folder 终端集成 Terminal Integration -->
+找到了一把手电筒
+<!-- folder 聊天历史 Chat History -->
+找到了一把手电筒
+<!-- folder 导出聊天 Export Chats -->
+找到了一把手电筒
+<!-- folder 规则 Rules -->
+找到了一把手电筒
+{% endfolders %}
 
 
 {% endbox %}
 
-
-
-
-## 核心：智能体
 
 {% quot 智能体：聊天 prefix:hardware:64 el:h3 %}
 

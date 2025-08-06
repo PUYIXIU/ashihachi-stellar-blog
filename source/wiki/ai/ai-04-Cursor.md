@@ -10,11 +10,6 @@ title: Cursor
 
 ### 核心：智能体
 
-- 模式
-  - Agent
-  - Ask
-  - Manual
-  - 创建自定义模式
 - 工具
   - 开启：Auto-Run Mode
   - Agent可以使用工具来搜索、编辑、运行命令
@@ -119,20 +114,6 @@ title: Cursor
     - Alt+Enter
 
 
-#### 智能体：模式
-
-- Agent
-  - 自主探索、多文件编辑、启用所有工具
-  - 
-- Ask
-  - 只读探索、无自动更改、仅搜索工具
-- Manual
-  - 直接文件编辑、具有明确控制、仅编辑工具
-  - 只编辑明确选择的文件
-  - 在确切知道要编辑什么时效果最佳，选择正确的文件并给出清晰的指令
-- Custom
-  - 用户定义的功能
-  - 对特定的工具组合和指令创建自定义模式
 
 #### 智能体：工具
 
@@ -184,16 +165,6 @@ title: Cursor
 - 审查更改（review changes）查看更改的完整差异
 
 
-### 核心：后台代理 Background Agent
-
-- 目前没有用到，有需要再看文档
-https://docs.cursor.com/zh/background-agent
-
-
-### 核心：Web & Mobile
-
-- 目前没有用到，有需要再看文档
-  https://docs.cursor.com/zh/background-agent/web-and-mobile#slack
 
 
 
