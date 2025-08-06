@@ -1,17 +1,146 @@
 ---
 wiki: ai # 项目id
 title: Cursor文档部分
+references:
+  - "[Cursor官方文档](https://docs.cursor.com/zh/welcome)"
 ---
 
-{% link https://docs.cursor.com/zh/welcome icon:/images/icons/cursor-logo.svg %}
+{% box 其它内容参考  %}
 
+- <a href="https://docs.cursor.com/zh/configuration/kbd">键盘快捷键</a>
 
-{% link href [title]  [desc:true/false] %}
+{% endbox %}
+
 
 
 # 核心
 
-## 核心：Tab
+{% box child:tabs %}
+{% tabs active:1  %}
+<!-- tab 快速开始 Quickstart -->
+
+{% folders %}
+<!-- folder Tab代码自动补全 / Autocomplete with Tab -->
+{% box  %}
+
+ | 操作     | 快捷键                     |
+ | :------- | :------------------------- |
+ | 接受建议 | {% kbd Tab %}              |
+ | 拒绝     | {% kbd Esc %}              |
+ | 逐词接受 | {% kbd Ctrl+Arrow-Right %} |
+
+{% endbox %}
+
+{% box Tab提示生成原理 %}
+- 上下文窗口中的代码被加密发送到后端
+- 后端解密后读取上下文
+-  {% u Cursor Tab模型 %} 预测代码建议，并返回给客户端在编辑器中显示
+{% endbox %}
+
+<!-- folder 内联编辑选中内容 / Inline Edit a selection -->
+
+{% box %}
+| 操作         | 快捷键               |
+| :----------- | :------------------- |
+| 打开内联浮窗 | {% kbd Ctrl+K               %} |
+| 切换输入焦点 | {% kbd Ctrl+Shift+K         %} |
+| 提交         | {% kbd Enter                %} |
+| 取消         | {% kbd Ctrl+Shift+BackSpace %} |
+| 快速提问     | {% kbd Alt+Enter            %} |
+| 发送到聊天     | {% kbd Ctrl+L            %} |
+{% endbox %}
+
+{% box 内联模式 %}
+
+| 模式                        | 描述                              |
+| :-------------------------- | :-------------------------------- |
+| Edit Selection / 选区编辑   | 针对选中代码修改                  |
+| Edit Full File / 全文件编辑 | 整个文件范围的更改                |
+| Quick Question / 快速问答   | 针对选中代码提问                  |
+| Send to Chat / 发送到聊天   | 发送到聊天，支持更高级的Agent功能 |
+
+{% endbox %}
+
+{% box 默认上下文 %}
+
+内联模式也支持使用@符号，添加默认上下文。
+上下文类型可以是：
+- 相关文件 / @Files
+- 最近查看的代码 / @Code
+- 相关信息 / @Docs&Web
+- 相关代码定义 / @Definitions
+
+{% endbox %}
+
+{% box 终端内联编辑 %}
+
+- 在 {% u 终端 %} 中按快捷键 {% kbd Ctrl+K %}
+- 描述希望执行的操作，可以生成相应的命令
+
+{% endbox %}
+
+
+
+<!-- folder 与Agent聊天 / Chat with Agent -->
+- Cursor上限和下限跨度最大的功能
+- 下到联网问个小问题，上到串通整个工作流
+- 高到MCP外接上下文，低到控制台运行终端命令
+<!-- folder Agent后台处理 / Handoff word to Background Agent -->
+- 用户和Cursor异步并行工作
+- 可以通过编辑器或外部集成（如Slack）访问
+<!-- folder 编写规则 / Write a rule -->
+- 创建mdc文件
+- 定义一些规则，相当于通用持久记忆
+<!-- folder MCP服务器 / Set up an MCP server -->
+- 集成外部工具的模型上下文协议
+- 连接数据库、API和文档源
+{% endfolders %}
+
+
+<!-- tab 概念 Concepts -->
+{% folders %}
+<!-- folder Tab -->
+- 自动补全多行和代码块（使用频率较高）
+- 在文件内和跨文件跳转到下一个自动补全建议（预判这一块）
+<!-- folder Agent -->
+- Agent相当于一个虚拟助理，能够根据目标、规则和环境做出决策和行动
+- Agent根据收集到的信息自主做出决策、与环境交互
+- 对于Cursor Agent，环境就是能够读取到的代码和文件内容
+<!-- folder Background Agent -->
+- 一边工作一边异步运行任务
+- 可以通过编辑器或外部集成（如Slack）访问
+<!-- folder Inline Edit -->
+- 精简版Agent
+- 针对选中代码块进行编辑
+<!-- folder Chat -->
+- 传统对话式智能体
+<!-- folder Rules -->
+- 定义AI行为的自定义指令。
+- 设置编码标准、框架偏好
+<!-- folder Memory -->
+- 需要持久存储的上下文和对话
+- 是另一种形式的rules
+<!-- folder Indexing -->
+- 当打开一个项目时，Cursor开始学习该项目的代码，即“索引”
+- 打开项目时，索引自动开始
+- 对代码库进行语义分析，支持代码搜索、引用查找和上下文感知建议
+<!-- folder MCP -->
+- 集成外部工具的模型上下文协议
+- 连接数据库、API和文档源
+<!-- folder 模型 -->
+- 用于代码生成不同的AI模型
+- 每个模型具有不同的速度和能力特性
+{% endfolders %}
+
+
+
+{% endtabs %}
+
+
+{% endbox %}
+
+
+
 
 ## 核心：智能体
 
