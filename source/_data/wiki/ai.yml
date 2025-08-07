@@ -28,6 +28,6 @@ tree:
     - index
     - ai-02-ClaudeCode
     - ai-03-Trae
-    - ai-04-Cursor
   'Cursor':
     - cursor-01-doc
+    - cursor-02-guides

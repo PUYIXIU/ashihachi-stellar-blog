@@ -25,7 +25,7 @@ share: true # 是否分享
 # 目录树
 tree:
   '项目本体':
-    - project-01-index
+    - canvas-01-intro
   'Knova':
     - Konva-01-index
     - Konva-02-Performance

@@ -16,7 +16,7 @@ toc:
   max_depth: 5 # 5 代表最多解析到 H5 标签
   # 如果toc无法正常显示时，会显示fallback设置的内容
   fallback: recent # Use a backup widget when toc does not exist.
-  collapse: true # true / false / auto (始终折叠/不折叠/自动折叠)
+  collapse: false # true / false / auto (始终折叠/不折叠/自动折叠)
 
 # 显示最近的文章/wiki页面
 recent:
