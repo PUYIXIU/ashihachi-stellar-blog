@@ -81,6 +81,15 @@ repo: xaoxuu/hexo-theme-stellar
 {% icon octopus:32 color:blue %}
 {% icon octopus:32 color:purple %}
 
+{% icon octopus_wave:64 %}
+{% icon coffee:64 %}
+{% icon quot-front:48 %}
+{% icon quot-back:48 %}
+{% icon cat-head:64 %}
+{% icon dog-head:64 %}
+{% icon hardware:64 %}
+{% icon point-right:64 %}
+
 ```markdown
 可以在任意位置插入图标：{% icon octopus:32 %}
 
@@ -189,6 +198,8 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ```markdown
 {% quot 居中引用 %}
 ```
+
+> 自定义icon配置在_config.stellar.yml的quot下配置
 
 {% quot 自定义配置 icon:coffee %}
 

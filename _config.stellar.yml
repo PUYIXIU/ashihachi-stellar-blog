@@ -243,6 +243,8 @@ tag_plugins:
     talk:
       prefix: quot-front:48
       suffix: quot-back:48
+    octopus:
+      prefix: octopus_wave:64
 
 # services 网站服务
 services:
