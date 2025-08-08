@@ -2,8 +2,8 @@ name: ai
 title: AI
 subtitle: 'AI知识库'
 tags: [AI]
-icon: /images/icons/翻滚猫.gif
-cover: /images/icons/翻滚猫.gif
+icon: /images/icons/ai-logo.jpg
+cover: /images/icons/ai-logo.jpg
 coverpage: true
 description: '关于AI的学习笔记'
 repo:

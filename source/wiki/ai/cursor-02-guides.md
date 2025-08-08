@@ -7,5 +7,3 @@ references:
   - "[Cursor键盘快捷键](https://docs.cursor.com/zh/configuration/kbd)"
   - "[上下文工作原理](https://docs.cursor.com/zh/guides/working-with-context)"
 ---
-
-1231223

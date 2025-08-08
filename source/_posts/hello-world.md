@@ -169,6 +169,19 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 {% image /images/base/test2.jpg 猫猫镇楼 width:300px padding:10px bg:var(--card) download:true fancybox:true %}
 ```
 
+
+#### blockquote 段落引用
+
+{% blockquote %}
+这是使用 blockquote 标签的例子
+{% endblockquote %}
+
+```markdown
+{% blockquote %}
+这是使用 blockquote 标签的例子
+{% endblockquote %}
+```
+
 #### quote 引用
 
 {% quot 居中引用 %}
